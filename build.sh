@@ -14,7 +14,7 @@ RELEASE="$(rpm -E %fedora)"
 
 # Use COPR zellij repo with rpm-ostree: https://discussion.fedoraproject.org/t/how-to-use-copr-on-fedora-atomic/106067/3
 sudo curl --output-dir "/etc/yum.repos.d/" --remote-name https://copr.fedorainfracloud.org/coprs/varlad/zellij/repo/fedora-40/varlad-zellij-fedora-40.repo
-sudo rpm-ostree refresh-md --force
+# sudo rpm-ostree refresh-md --force
 
 rpm-ostree install fish helix zellij zoxide eza fd-find ripgrep bat
 
