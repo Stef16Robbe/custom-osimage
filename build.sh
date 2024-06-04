@@ -15,7 +15,7 @@ RELEASE="$(rpm -E %fedora)"
 # Use COPR repo's with rpm-ostree: https://github.com/boredsquirrel/COPR-command
 # TODO: https://discussion.fedoraproject.org/t/need-help-using-copr-in-fedora-silverblue/74522/2
 wget https://raw.githubusercontent.com/trytomakeyouprivate/COPR-OSTree/main/copr -P /tmp && chmod +x /tmp/copr
-/tmp/copr enable varlad/zellij
+echo "y" | /tmp/copr enable varlad/zellij
 
 rpm-ostree install fish helix zellij zoxide eza fd-find ripgrep bat
 
